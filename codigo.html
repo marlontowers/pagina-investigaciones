@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis Investigaciones - [Tu Nombre]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primario: #0a66c2;
+      --color-fondo: #f9f9f9;
+      --color-texto: #333;
+      --color-footer: #e5e5e5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--color-primario);
+      color: white;
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      background-color: var(--color-primario);
+      text-align: center;
+      padding: 0.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--color-primario);
+      padding-left: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: var(--color-primario);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: var(--color-footer);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .logo {
+        width: 80px;
+        height: 80px;
+      }
+
+      section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/100" alt="Foto de perfil" class="logo">
+    <h1>[Tu Nombre]</h1>
+    <p>Investigador | Economista | [Especialidad]</p>
+  </header>
+
+  <nav>
+    <a href="#bio">Sobre mí</a>
+    <a href="#investigaciones">Investigaciones</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="bio" class="bio">
+      <h2>Sobre mí</h2>
+      <p>Bienvenido a mi página personal. Soy [tu nombre], investigador en [tema]. En este espacio comparto mis publicaciones y proyectos académicos.</p>
+    </section>
+
+    <section id="investigaciones" class="investigaciones">
+      <h2>Investigaciones</h2>
+      <ul>
+        <li><a href="docs/investigacion1.pdf" target="_blank">Título de la Investigación 1</a> – 2024</li>
+        <li><a href="docs/investigacion2.pdf" target="_blank">Título de la Investigación 2</a> – 2023</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:tucorreo@dominio.com">tucorreo@dominio.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/tuusuario/" target="_blank">tuusuario</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
